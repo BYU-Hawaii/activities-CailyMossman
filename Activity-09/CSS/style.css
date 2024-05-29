@@ -3,7 +3,7 @@ header{
 }
 
 body{
-    background-color:rgb(242, 241, 239);
+    background-color:rgb(210, 203, 190);
 }
 
 
@@ -29,7 +29,37 @@ body{
 
 }
 
+img{
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    float: left;
+}
 
 .navbar li{
     float: left
 }
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 3px;
+    border-radius: 4px;
+    padding: 5px;
+    gap: 20px;
+}
+
+.black {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(9, 94, 54) ;
+    color: white;
+    text-align: center;
+  }
