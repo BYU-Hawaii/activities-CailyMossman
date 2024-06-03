@@ -1,7 +1,8 @@
 .grid-container{
     display: grid;
+    grid-template-areas: 'myArea myArea myArea';
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 2fr;
     gap: 10px;
     padding: 20px;
 }
@@ -15,21 +16,21 @@
 }
 
 .item1{
-    grid-column: 1/4;
+    grid-area: 4/3;
     background-color: aquamarine;
 }
 
 .item2{
-    grid-column: 2/3;
+    grid-area: 3/2;
     background-color:rgba(127, 255, 212, 0.613);
 }
 
 .item3{
-    grid-column: 2/2;
+    grid-area: 2/1;
     background-color: rgba(127, 255, 212, 0.718);
 }
 
 .item4{
-    grid-column: 1/4;
+    grid-area: myArea;
     background-color: rgba(127, 255, 212, 0.383);
 }
