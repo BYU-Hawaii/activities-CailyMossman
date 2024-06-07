@@ -1,0 +1,108 @@
+header{
+    text-align: center;
+}
+
+body {
+  background-image: url('../images/mountains.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center;
+  min-height: 100vh;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "hometext"
+        "footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.navbar{
+    grid-area:navbar;
+}
+
+.main{
+    grid-area: main;
+    padding: 1rem
+}
+
+.footer{
+    grid-area: footer;
+}
+
+section{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    background-color: white; opacity:0.9 ;
+    color:rgb(11, 42, 85);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.hometext{
+    font-weight: bold;
+    background-color: white; opacity:0.9 ;
+    color:rgb(11, 42, 85)
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 10px;
+    border:rgb(11, 42, 85);
+    border-radius: 20px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(11, 42, 85);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(1, 28, 4);
+}
+
+.pin-bullets{
+    list-style-image: url(../images/pin.svg);
+}
+
+footer{
+    background-color: rgb(11, 42, 85);
+    color:white;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+@media (min-width: 768px) {
+    .navbar ul li{
+        float: left;
+    }
+    .navbar{
+        margin-right: 20px;
+    }
+}
