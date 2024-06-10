@@ -11,9 +11,12 @@ body {
 }
 
 .grid-container{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    display:grid;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer";
 }
 
 .header{
@@ -33,9 +36,15 @@ body {
     grid-area: footer;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 20px;
+}
+
 section{
-    margin-left: 20px;
-    margin-right: 20px;
     font-weight: bold;
     background-color: white; opacity:0.9 ;
     color:rgb(11, 42, 85);
@@ -46,7 +55,7 @@ figcaption{
     text-align: center;
 }
 
-.hometext{
+p{
     font-weight: bold;
     background-color: white; opacity:0.9 ;
     color:rgb(11, 42, 85)
@@ -54,8 +63,6 @@ figcaption{
 
 img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 95%;
     padding: 10px;
     border:rgb(11, 42, 85);
@@ -102,27 +109,13 @@ footer{
     .navbar{
         margin-right: 20px;
     }
-    .section{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .section > * {
-        flex: 1 1 50%;
-        box-sizing: border-box;
-        padding: 10px;
+    .container{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (min-width: 992px) {
-    section {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    section > * {
-        flex: 1 1 33.33%;
-        box-sizing: border-box;
-        padding: 10px;
+@media (min-width:992px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
-
