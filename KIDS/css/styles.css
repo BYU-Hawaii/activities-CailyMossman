@@ -153,6 +153,14 @@ header:hover img{
     font-size: 15px;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding: 5px;
+    gap: 20px;
+  }
+
 /*let us know page*/
 .feedback-form {
     max-width: 600px;
@@ -203,6 +211,7 @@ header:hover img{
     .container{
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media (min-width:992px) {
