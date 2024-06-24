@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const choices = document.querySelectorAll('.choices img');
     const resultDiv = document.getElementById('result');
+    const resetButton = document.getElementById('resetButton');
 
     choices.forEach(choice => {
         choice.addEventListener('click', () => {
@@ -9,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = determineWinner(playerChoice, computerChoice);
             displayResult(playerChoice, computerChoice, result);
         });
+    });
+
+    resetButton.addEventListener('click', () => {
+        resultDiv.textContent = '';
     });
 
     function determineWinner(playerChoice, computerChoice) {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>LET US KNOW!</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "fun.html">Tic Tac Toe</a></li>
+                <li><a href = "game.html">Rock Paper Scissors</a></li>
+                <li><a href = "contact.html">Let Us Know!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="feedback-form">
+            <h2>Let Us Know!</h2>
+            <p>We would love to hear from you, let us know how we can be better :D </p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" required></textarea>
+                
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="5">Excellent</option>
+                    <option value="4">Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Poor</option>
+                    <option value="1">Terrible</option>
+                </select>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <h3 class="black">&copy; PLAYPAL 2024</h3>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+</html>

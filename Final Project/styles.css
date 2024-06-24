@@ -35,22 +35,6 @@ body{
 
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
-    padding: 20px;
-}
-
-img{
-    display: block;
-    width: 95%;
-    padding: 10px;
-    border:rgb(11, 42, 85);
-    border-radius: 20px;
-}
-
 footer{
     background-color: #ed553b;
 }

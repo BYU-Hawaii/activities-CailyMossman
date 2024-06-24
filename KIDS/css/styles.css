@@ -1,24 +1,25 @@
+/*home page*/
 body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 0;
-    background-color: #f0f8ff;
+    background-color: #6face2;
 }
 
 header {
     text-align: center;
     margin-bottom: 20px;
+    color:white
 }
 
 .navbar ul{
     list-style-type: none;
     text-align: center;
     background-color: #f6d55c;
-    padding: 10px 20px;
+    padding: 20px 40px;
     font-size: 18px;
     margin: 0px;
     overflow: hidden
@@ -38,6 +39,31 @@ header {
 
 }
 
+/*about page*/
+.about{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 15px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 20px;
+}
+
+.container img{
+    width: 250px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+/*tic tac toe page*/
 .game-board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -67,6 +93,7 @@ header {
     color: #ff6347;
 }
 
+/*rock paper scissors page*/
 .choices {
     display: flex;
     justify-content: space-around;
@@ -74,7 +101,7 @@ header {
 }
 
 .choices img {
-    width: 100px; /* Adjust size as needed */
+    width: 100px; 
     cursor: pointer;
 }
 
@@ -85,12 +112,56 @@ header {
     color: #ff6347;
 }
 
+#result img {
+    width: 100px;
+}
+
 #reset {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
 }
 
+/*let us know page*/
+.feedback-form {
+    max-width: 600px;
+    margin: center;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.feedback-form input, .feedback-form textarea, .feedback-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #ff6600;
+}
+
+/*media queries*/
 @media (min-width: 768px) {
     .navbar ul li{
         float: left;
