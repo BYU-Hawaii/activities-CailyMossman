@@ -97,6 +97,7 @@ header:hover img{
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
+    padding: 40px 40px;
 }
 
 .cell {
@@ -126,6 +127,7 @@ header:hover img{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    padding: 40px 40px;
 }
 
 .choices img {
