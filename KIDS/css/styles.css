@@ -39,6 +39,24 @@ header {
 
 }
 
+.intro, .join-us, .hey {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 15px;
+}
+
+.join-us p {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 15px;
+}
+
 /*about page*/
 .about{
     color: white;
