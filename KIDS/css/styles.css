@@ -60,6 +60,12 @@ header:hover img{
     font-size: 15px;
 }
 
+.intro img, .hey img {
+    width: 250px;
+    height: 230px;
+    border-radius: 10px;
+}
+
 /*about page*/
 .about{
     color: white;
@@ -144,16 +150,12 @@ header:hover img{
 }
 
 /*history page*/
-.intro, .join-us, .hey {
+.flex-container{
     color: white;
     align-items: center;
-    justify-content: center;
     text-align: center;
     padding: 20px 40px;
     font-size: 15px;
-}
-
-.flex-container {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around; 
