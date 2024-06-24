@@ -157,6 +157,7 @@ header:hover img{
     padding: 20px 40px;
     font-size: 15px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap; 
     justify-content: space-around; 
     padding: 5px;
