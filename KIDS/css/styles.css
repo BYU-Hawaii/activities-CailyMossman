@@ -170,7 +170,7 @@ header:hover img{
 /*let us know page*/
 .feedback-form {
     max-width: 600px;
-    margin: center;
+    align-items: center;
     padding: 50px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
